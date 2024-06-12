@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Umfrage Weiterleitung</title>
+    <script type="text/javascript">
+        function redirect() {
+            var survey1 = "https://forms.gle/BAhpvBEQuYftuwd4A";
+            var survey2 = "https://forms.gle/Xcw7Q37yKX9iLx297";
+            
+            // Zufällige Auswahl der Umfrage
+            var random = Math.random();
+            if (random < 0.5) {
+                window.location.href = survey1;
+            } else {
+                window.location.href = survey2;
+            }
+        }
+    </script>
+</head>
+<body onload="redirect()">
+    <p>Sie werden zur Umfrage weitergeleitet...</p>
+</body>
+</html>
